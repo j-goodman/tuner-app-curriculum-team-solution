@@ -1,0 +1,29 @@
+{
+  "name": "tuner-api-solution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dbinit": "psql -U postgres -f db/schema.sql",
+    "seed": "psql -U postgres -f db/seed.sql",
+    "test": "jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joinpursuit/tuner-api-solution.git"
+  },
+  "author": "K. Rafalski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joinpursuit/tuner-api-solution/issues"
+  },
+  "homepage": "https://github.com/joinpursuit/tuner-api-solution#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest": "^27.4.7",
+    "pg-promise": "^10.10.2",
+    "supertest": "^6.2.0"
+  }
+}
